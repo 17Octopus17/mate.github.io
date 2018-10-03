@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <form>
+    
+    <label for="fname">First Name*</label>
+    <input type="text"  name="firstname" placeholder="Your name.." pattern="[A-Za-z]+" required>
+
+    <label for="lname">Last Name*</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[A-Za-z]+" required>
+
+    <label for="bday">Birthday*</label>
+        <input type="date" id="pickdate" name="date" required>
+   
+    
+    <label for="gender">Gender*</label>
+    <input type="radio" id="inlineRadio1" name="inlineRadioOptions" value="option1" >
+    <label for="inlineRadio1">Male</label>
+    <input type="radio" id="inlineRadio2" name="inlineRadioOptions" value="option2">
+    <label for="inlineRadio2">Female</label>
+  <!-- delete br and make better container -->     <br/>
+    <br/> 
+  
+    
+    <label for="country">Country*</label>
+    <select id="country" name="country">
+      <option value="choose">Choose...</option>
+      <option value="ukraine">Ukraine</option>
+      <option value="russia">Russia</option>
+      <option value="belarus">Belarus</option>
+    </select>
+
+    <label for="mail">Email*</label>
+    <input type="email" id="mail" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+    <label for="psw">Password*</label>
+    <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
+  <input type="password" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    
+    <label for="adr">Address*</label>
+    <input type="text" id="adr" name="address" placeholder="Your address.." pattern="[a-zA-Z0-9]+" required>
+
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+     <p> * - This field is required</p>
+    
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
